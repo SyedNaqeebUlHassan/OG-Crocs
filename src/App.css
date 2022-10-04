@@ -1,38 +1,524 @@
-.App {
+.body {
+  background-color: black;
+  padding-left: 10px;
+  font-family: sans-serif;
+  margin-top: -10px;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  text-align: center;
+  align-items: center;
+  height: 100px;
+  margin-left: -10px;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.Logo {
+  color: #a5fa00;
+  font-weight: 700;
+}
+.Logo .p1 {
+  padding-left: 60px;
+  font-size: medium;
+}
+.Logo .p2 {
+  margin-top: -20px;
+  padding-left: 60px;
+  font-size: larger;
+  color: white;
+  letter-spacing: 5px;
+}
+
+.Humberger {
+  margin-right: 50px;
+}
+.Header-Section {
+  color: white;
+  height: 40%;
+}
+.Header-heading {
+  padding-top: 110px;
+  font-weight: bolder;
+  font-size: 50px;
+}
+.Header-heading .span {
+  margin-left: 70px;
+}
+.Header-heading span span {
+  color: #a5fa00;
+}
+.Header-ParaGarph {
+  font-weight: lighter;
+  font-size: 24px;
+}
+.Header-ParaGarph .p1 {
+  text-indent: 70px;
+}
+
+.header-card {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+.header-card-2 {
+  margin-top: -50px;
+}
+.Header-Card img {
+  width: 300px;
+  height: 300px;
+}
+.header-card-2 img {
+  width: 300px;
+  height: 300px;
+}
+.header-card-3 img {
+  width: 300px;
+  height: 300px;
+}
+.card {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.card img {
+  border-radius: 20px;
+}
+
+.About-Heading {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.About-Heading h1 {
+  color: #a5fa00;
+  font-size: x-large;
+  font-weight: 500;
+}
+.About-Paragraph p {
+  text-indent: 50px;
+  color: white;
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+.About-Paragraph span {
+  color: #a5fa00;
+  font-family: "Common Pixel", sans-serif;
+}
+.utlity-heading {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.utlity-heading h1 {
+  color: #a5fa00;
+  font-size: x-large;
+  font-weight: 500;
+}
+
+.utlity-top-div {
+  display: flex;
+  justify-content: space-around;
+}
+.utlity-card-1 {
+  display: flex;
+  flex-direction: column;
+}
+.utlity-card-2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.utlity-card-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #161a1c;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  margin-top: 25px;
+}
+.utlity-card-header {
+  display: flex;
+}
+.utlity-card-header img {
+  width: 100px;
+}
+.card-content p {
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Sr-main-div {
+  background-color: #a5fa00;
+  margin-left: -10px;
+  height: 1500px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Sr-main-div .Description-div {
+  padding-top: 200px;
+  margin-left: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Sr-main-div .Description-div p {
+  font-size: x-large;
+}
+.Sr-main-div .Description-div h1 {
+  font-size: 85px;
+}
+.Sr-main-div .Description-div h1 span {
+  font-family: "Common Pixel", sans-serif;
+}
+.Sr-main-div .Description-div .p1 {
+  font-size: large;
+  text-indent: 100px;
+}
+.Sr-main-div .Second-div .img-div {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0px 0px 0px 2px green;
+  padding: 2em;
+}
+.Sr-main-div .Second-div .img-div::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-top: 10px solid #a5fa00;
+  border-bottom: 10px solid #a5fa00;
+  height: calc(100% - 20px);
+  top: 0;
+  width: calc(100% - 36px);
+  left: 18px;
+}
+.Sr-main-div .Second-div .img-div::after {
+  display: block;
+  position: absolute;
+  content: "";
+  border-right: 10px solid #a5fa00;
+  border-left: 10px solid #a5fa00;
+  height: calc(100% - 36px);
+  width: calc(100% - 20px);
+  top: 18px;
+  left: 0;
+}
+.utlity-top-div-for-mobile {
+  display: none;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/* /////////Mobile Responsivenes///// */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 479px) {
+  .Header-Card img {
+    width: 150px;
+    height: 150px;
   }
-  to {
-    transform: rotate(360deg);
+  .header-card-2 img {
+    width: 150px;
+    height: 150px;
+  }
+  .header-card-3 img {
+    display: none;
+  }
+  .Header-heading {
+    font-size: 35px;
+  }
+  .Header-heading .span {
+    margin-left: 0px;
+  }
+  .About-Paragraph P {
+    font-size: 20px;
+    text-indent: 30px;
+  }
+  .utlity-heading {
+    display: none;
+  }
+  .utlity-top-div {
+    display: none;
+  }
+  .utlity-top-div-for-mobile {
+    display: flex;
+    justify-content: space-between;
+  }
+  .utlity-card-1-for-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .utlity-card-2-for-mobile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-right: 15px;
+  }
+  .utlity-card-div-for-mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: #161a1c;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    margin-top: 25px;
+  }
+  .utlity-card-header-for-mobile {
+    display: flex;
+  }
+  .utlity-card-header-for-mobile img {
+    width: 50px;
+  }
+  .card-content-for-mobile p {
+    color: white;
+    text-align: center;
+    font-size: small;
+  }
+  .Sr-main-div .Second-div .img-div .img {
+    width: 400px;
+  }
+  .Sr-main-div .Description-div h1 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 480px) {
+  .Header-heading {
+    font-size: 40px;
+  }
+  .Header-heading .span {
+    margin-left: 70px;
+  }
+  .Header-ParaGarph {
+    font-weight: lighter;
+    font-size: 15px;
+  }
+  .Header-Card img {
+    width: 130px;
+    height: 130px;
+  }
+  .header-card-2 img {
+    width: 130px;
+    height: 130px;
+  }
+  .header-card-3 img {
+    width: 130px;
+    height: 130px;
+  }
+  .About-Heading {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .About-Heading h1 {
+    font-size: large;
+    margin-left: 30px;
+  }
+  .About-Paragraph P {
+    font-size: 24px;
+    text-indent: 30px;
+  }
+  .utlity-heading {
+    display: none;
+  }
+  .utlity-top-div {
+    display: none;
+  }
+  .utlity-top-div-for-mobile {
+    display: flex;
+    justify-content: space-between;
+  }
+  .utlity-card-1-for-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .utlity-card-2-for-mobile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-right: 15px;
+  }
+  .utlity-card-div-for-mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: #161a1c;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    margin-top: 25px;
+  }
+  .utlity-card-header-for-mobile {
+    display: flex;
+  }
+  .utlity-card-header-for-mobile img {
+    width: 50px;
+  }
+  .card-content-for-mobile p {
+    color: white;
+    text-align: center;
+  }
+  .SpecialReward h1 {
+    font-size: 45px;
+  }
+  .Sr-main-div .Second-div .img-div .img {
+    width: 400px;
+  }
+
+  .Sr-main-div .Description-div h1 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 700px) {
+  .Header-heading {
+    font-size: 60px;
+  }
+  .Header-ParaGarph {
+    font-weight: lighter;
+    font-size: 23px;
+  }
+  .Header-Card img {
+    width: 200px;
+    height: 200px;
+  }
+  .header-card-2 img {
+    width: 200px;
+    height: 200px;
+  }
+  .header-card-3 img {
+    width: 200px;
+    height: 200px;
+  }
+  .About-Heading {
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+  .About-Paragraph p {
+    text-indent: 50px;
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+  }
+  .utlity-heading {
+    display: none;
+  }
+  .utlity-top-div {
+    display: none;
+  }
+  .utlity-top-div-for-mobile {
+    display: flex;
+    justify-content: space-between;
+  }
+  .utlity-card-1-for-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .utlity-card-2-for-mobile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-right: 15px;
+  }
+  .utlity-card-div-for-mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: #161a1c;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    margin-top: 25px;
+  }
+  .utlity-card-header-for-mobile {
+    display: flex;
+  }
+  .utlity-card-header-for-mobile img {
+    width: 100px;
+  }
+  .Sr-main-div .Second-div .img-div .img {
+    width: 500px;
+  }
+}
+@media (min-width: 800px) {
+  .utlity-heading {
+    display: none;
+  }
+  .utlity-top-div {
+    display: flex;
+  }
+  .utlity-top-div-for-mobile {
+    display: none;
+  }
+  .utlity-card-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #161a1c;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    margin-top: 25px;
+  }
+  .Header-Card img {
+    width: 250px;
+    height: 250px;
+  }
+  .header-card-2 img {
+    width: 250px;
+    height: 250px;
+  }
+  .header-card-3 img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .utlity-heading {
+    display: flex;
+  }
+  .utlity-top-div {
+    display: flex;
+  }
+  .utlity-top-div-for-mobile {
+    display: none;
+  }
+  .utlity-card-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #161a1c;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    margin-top: 25px;
+  }
+  .Header-Card img {
+    width: 300px;
+    height: 300px;
+  }
+  .header-card-2 img {
+    width: 300px;
+    height: 300px;
+  }
+  .header-card-3 img {
+    width: 300px;
+    height: 300px;
+  }
+  .Sr-main-div .Second-div .img-div .img {
+    width: 800px;
   }
 }
